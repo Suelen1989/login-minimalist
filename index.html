@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="form-login">
+        <h1>AcelerAI.Tech</h1>
+        <p>Por favor insira suas credenciais para fazer login</p>
+
+        <div class="input-group">
+            <label for="field-username">Nome de usuário</label>
+            <input id="field-username" type="text" name="field-username" placeholder="nome de usuário" required>
+        </div>
+            
+        <div class="input-group">
+            <label for="field-password">Senha</label>
+            <input id="field-password" type="password" name="field-password" placeholder="senha" autocomplete="current-password" required>
+        </div>
+
+        <button type="submit">Conecte-se</button>
+        
+        <div class="links">
+            <a href="#">Redefinir senha?</a>
+            <a href="#">Criar uma conta</a>
+        </div>
+    </form>
+
+    <script>
+        const loginRepository = {
+            login({username, password}, _fetch = fetch) {
+                _fetch("https://suelen.com/api/login", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ username, password }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log("Login successful", data);
+                })
+                .catch(error => {
+                    console.error("Login failed", error);
+                });
+            }
+        };
+
+        document.querySelector(".form-login").addEventListener("submit", handleLogin);
+
+        function handleLogin(event) {
+            event.preventDefault();
+            const username = document.querySelector("#field-username").value;
+            const password = document.querySelector("#field-password").value;
+            loginRepository.login({ username, password });
+        }
+    </script>
+</body>
+</html>
