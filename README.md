@@ -15,11 +15,6 @@ Este é um projeto simples de uma tela de login minimalista, desenvolvido utiliz
 - **CSS3**: Estilização da interface
 - **JavaScript**: Manipulação de eventos e comunicação com API
 
-## Estrutura do Projeto
-- index.html        # Página principal do formulário de login
-- styles.css        # Estilos CSS para o layout minimalista
-- README.md         # Documentação do projeto
-
 ## Simulação de API
 No código JavaScript, a função `loginRepository.login()` é usada para enviar as credenciais de login (username e password) para uma API simulada:
 
@@ -62,6 +57,11 @@ Para executar o projeto, você precisa apenas de um navegador web.
 - Adicionar feedback visual de erro ou sucesso ao tentar logar
 - Substituir o backend simulado por uma API real
 
+📷 Tela de Login
+
+Aqui está uma captura de tela da interface de login:
+
+![Tela de Login](imagens/login.png)
 
 
 
