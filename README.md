@@ -16,12 +16,12 @@ Este é um projeto simples de uma tela de login minimalista, desenvolvido utiliz
 - **JavaScript**: Manipulação de eventos e comunicação com API
 
 ## Estrutura do Projeto
-├── index.html        # Página principal do formulário de login
-├── styles.css        # Estilos CSS para o layout minimalista
-└── README.md         # Documentação do projeto
+- index.html        # Página principal do formulário de login
+- styles.css        # Estilos CSS para o layout minimalista
+- README.md         # Documentação do projeto
 
 ## Simulação de API
-No código JavaScript, a função loginRepository.login() é usada para enviar as credenciais de login (username e password) para uma API simulada:
+No código JavaScript, a função `loginRepository.login()` é usada para enviar as credenciais de login (username e password) para uma API simulada:
 
 ````bash
 loginRepository.login({username, password}, _fetch = fetch) {
@@ -54,11 +54,11 @@ Para executar o projeto, você precisa apenas de um navegador web.
    ```bash
    cd login-minimalista
    
-3. Abra o arquivo index.html no seu navegador ou utilize uma extensão como Live Server no VS Code para visualizar o projeto localmente.
+3. Abra o arquivo ``index.html`` no seu navegador ou utilize uma extensão como Live Server no VS Code para visualizar o projeto localmente.
 
 
-##💡 Melhorias Futuras
-- Implementar validações mais avançadas nos campos de username e password
+💡 Melhorias Futuras
+- Implementar validações mais avançadas nos campos de nome de usuário e senha
 - Adicionar feedback visual de erro ou sucesso ao tentar logar
 - Substituir o backend simulado por uma API real
 
