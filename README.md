@@ -61,7 +61,7 @@ Para executar o projeto, você precisa apenas de um navegador web.
 
 Aqui está uma captura de tela da interface de login:
 
-![Tela de Login](imagens/login.png)
+![Tela de Login](assets/login.png)
 
 
 
