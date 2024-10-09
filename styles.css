@@ -5,6 +5,14 @@
     font-family: 'Arial', sans-serif;
 }
 
+#nav_logo {
+    font-size: 30px;
+    color: #333;
+    margin-left: 47px;
+    margin-bottom: 20px;
+
+}
+
 body {
     display: flex;
     justify-content: center;

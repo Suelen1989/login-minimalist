@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <form class="form-login">
-        <h1>AcelerAI.Tech</h1>
-        <p>Por favor insira suas credenciais para fazer login</p>
+        <i class="fa-solid fa-users-gear" id="nav_logo"> <strong>AcelerAI.Tech</strong></i>
+        <p>Insira suas informações de acesso</p>
 
         <div class="input-group">
-            <label for="field-username">Nome de usuário</label>
-            <input id="field-username" type="text" name="field-username" placeholder="nome de usuário" required>
+            <label for="field-username">Usuário</label>
+            <input id="field-username" type="text" name="field-username" placeholder="Usuário de acesso" required>
         </div>
             
         <div class="input-group">
             <label for="field-password">Senha</label>
-            <input id="field-password" type="password" name="field-password" placeholder="senha" autocomplete="current-password" required>
+            <input id="field-password" type="password" name="field-password" placeholder="Senha" autocomplete="current-password" required>
         </div>
 
         <button type="submit">Conecte-se</button>
